@@ -13,9 +13,23 @@
 
 			#needle {
 				position: absolute;
-				top: 50px;
-				left: 65px;
+				top: 30px;
+				left: 115px;
 				z-index: 10;
+			}
+			#txtHeading {
+				width: 50px;
+			}
+			#txtHeading {
+
+				margin-bottom: 10px;
+			}
+			.controls {
+				margin: auto;
+			}
+			.panel {
+
+				margin: auto;
 			}
 		</style>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
@@ -25,10 +39,20 @@
 		<script type="text/javascript" charset="utf-8" src="jsRorate/jQueryRotate.js"></script>
 		<script type="text/javascript" charset="utf-8" src="script/compass.js"></script>
 
-		
 	</head>
 	<body>
-		<img id="compass" src="Image/compass.png" />
-		<img src="Image/needle.png" id="needle" />
+		<div class="panel">
+			<!-- <div class="controls">
+				<label id="lblHeading">Heading:</label>
+				<input id="txtHeading" type="number" value="0" />
+			</div> -->
+			<div class="controls1" >
+				<img id="compass" src="assets/compass.png" width="240" height="239" />
+				<img src="assets/needle.png" id="needle" width="20" height="190" />		
+			</div>
+			<div id="btnWatch" class="hotspot" style="margin-top: 250px">
+					Watch Heading
+				</div>
+		</div>
 	</body>
 </html>
